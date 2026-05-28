@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Experiencia - Viaje a El Bolsón</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero hero-subpage">
+        <div class="hero-content">
+            <h1 class="titulo">Nuestra Experiencia</h1>
+            <p class="subtitulo">En la Comarca Andina</p>
+        </div>
+    </header>
+
+    
+    <nav class="navigation">
+        <a href="inicio.html" class="nav-btn">Inicio</a>
+        <a href="lugares.html" class="nav-btn">Lugares</a>
+        <a href="experiencia.html" class="nav-btn active">Experiencia</a>
+        
+    </nav>
+
+    <main class="content-section wide-section">
+        <h2>Un viaje inolvidable</h2>
+        <p>Nuestra experiencia en el viaje.</p>
+        
+        <div class="editorial-container">
+            
+  
+            <article class="editorial-block">
+                <div class="editorial-image" style="background-image: url('cabañas.png');"></div>
+                <div class="editorial-text">
+                    <h3>En las cabañas</h3>
+                    <p>Las cabañas de el Complejo Nosotros eran comodas, con 2 piezas, calefacción, un baños y terraza.</p>
+                </div>
+            </article>
+
+            <article class="editorial-block">
+                <div class="editorial-image" style="background-image: url('piedras.png');"></div>
+                <div class="editorial-text">
+                    <h3>Nuestra experiencia en el Geomuseo</h3>
+                    <p>Nuestra visita al Geomuseo fue un viaje fascinante por la historia de la tierra, donde aprendimos sobre la formación de los paisajes patagónicos y descubrimos fósiles increíbles que conectan el pasado con el presente de la región..</p>
+
+                      <button onclick="toggleSeccion('comparación')" style="padding: 10px 20px; cursor: pointer; background-color: #1a252f; color: white; border: 1px solid white; border-radius: 5px; margin-bottom: 20px;">                                           
+    Comparación
+  </button>
+  <div id="comparación" style="display: none;">
+
+<table style="border-collapse: collapse; width: 100%;">
+<tr>
+<td style="border: 1px solid black;">Rocas</td>
+<td style="border: 1px solid black;">Minerales</td>
+<td style="border: 1px solid black;">Piedras</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">Están formadas por uno o varios minerales unidos</td>
+<td style="border: 1px solid black;">Sustancias naturales con composición química definida</td>
+<td style="border: 1px solid black;">Son fragmentos o trozos de rocas más pequeños</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">Son materiales sólidos naturales de la Tierra</td>
+<td style="border: 1px solid black;">Tienen forma cristalina y propiedades propias</td>
+<td style="border: 1px solid black;">Pueden tener distintas formas y tamaños</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">Ejemplo: granito, mármol.</td>
+<td style="border: 1px solid black;">Ejemplo: cuarzo rosa, ágata, obsidiana.</td>
+<td style="border: 1px solid black;">Se encuentran en ríos, montañas o suelos</td>
+</tr>
+</table>
+  
+</div>
+
+</center>
+
+
+
+            </article>
+            <script>
+
+function toggleSeccion(idDeLaSeccion) {
+  var elemento = document.getElementById(idDeLaSeccion);
+  
+  if (elemento.style.display === "none" || elemento.style.display === "") {
+    elemento.style.display = "block";                                         <!--ESTO HACE QUE CUANDO LO APRETAMOS = MOSTRAR, Y SI VOLVEMOS A APRETAR = OCULTAR-->
+  } else {
+    elemento.style.display = "none";
+  }
+}                                                           
+</script>
+
+
+            
+            <article class="editorial-block">
+                <div class="editorial-image" style="background-image: url('feria1.png');"></div>
+                <div class="editorial-text">
+                    <h3>Tarde en la feria</h3>
+                    <p>Disfrutamos de un recorrido vibrante por los puestos locales, donde el talento de los artesanos y la variedad de productos regionales nos permitieron conectar de cerca con la cultura y esencia de la zona.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+<div class="card-image" style="background-image: url('cabañas.png'); display: none;"></div>
+<div class="card-image" style="background-image: url('piedras.png'); display: none;"></div>
+<div class="card-image" style="background-image: url('feria1.png'); display: none;"></div>
+</body>
+</html>

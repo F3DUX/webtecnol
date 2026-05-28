@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viaje a El Bolsón</title>
+<!-- Acá conectamos el HTML con nuestro archivo de diseño CSS -->
+<link rel="stylesheet" href="styles.css">
+<!-- Importamos una fuente elegante de Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+<!-- ESTO ES LO Q SALE ARRIBA DEL TODO, TIPO DONDE ESTA EL TITULO  -->
+<header class="hero">
+<div class="hero-content">
+<h1 class="titulo-inicial">El Bolsón</h1> 
+<p class="subtitulo">Viaje Escolar</p>
+</div>
+</header>
+
+<nav class="navigation">
+<a href="lugares.html" class="nav-btn">Lugares</a>
+<a href="Experiencia.html" class="nav-btn">Experiencia</a>
+</nav>
+
+
+<main class="content-section">
+<h2>La Esencia del Sur</h2>
+<p>Se parte de este viaje.</p>
+<p>Hecho por Anna Cherenichenko, Simona Alanis, Federico Caravotta y Benjamin Carresane</p>
+</main>
+
+<!-- Font Awesome 5.15.1 CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+<div class=Redes Sociales">Redes Sociales
+<style>
+  .contenedor-centrado {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 15vh;           
+    text-align: center;
+  }
+</style>
+ <div class="wrapper">
+  <a href="https://www.instagram.com/bolsontour_turismoynaturaleza/" class="icon instagram" target="_blank">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </a>
+</div>
+<style>
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff; 
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;                                                     <!--TODO ESTO ES PARA QUE APAREZCA UN BOTON CHICO DE IG PARA IR A MI INSTAGRAM-->
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center; /* Para centrar el icono */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;100%); /* Centra el tooltip sobre el icono */
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Efecto Hover */
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+</style>
+
+</body>
+</html>
